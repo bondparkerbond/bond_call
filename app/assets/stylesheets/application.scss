@@ -1,0 +1,44 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "materialize/components/color";
+$primary-color: #661D16 !default; // starting red
+$primary-color-light: #663D39 !default; // slightly greyed red?
+$primary-color-dark: color("blue", "darken-4") !default; // don't think we'll need blue
+$secondary-color: #666666 !default; // grey, not sure if needs to be lightened up though
+$secondary-color-light: #bdbdbd; // lighter grey
+$secondary-color-materialize: #9e9e9e; // darker than the light grey
+$link-color: color("orange", "base") !default; // this will probably change
+
+@import "materialize";
+
+.color-test {
+  background-color: $secondary-color;
+}
+.background-grey {
+  background-color: $secondary-color-materialize;
+}
+
+.card-color {
+  background-color: $primary-color-light;
+}
+
+// other color options I've been playing with.
+// monocromatic:  #663D39  // greyed red
+// complementary: #16663C  **** // green, maybe for call to action or buttons?
+// other complem: #114D1E  // darker green option
+// split complem: #256616  // lighter green, I don't like this as much
+// equiangular:   #16663C  // almost a blue green
