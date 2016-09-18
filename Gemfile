@@ -30,9 +30,22 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# For map of office if needed
+gem 'gmaps4rails'
+# Formatting using materialize instead of bootstrap.
+gem 'materialize-sass'
+
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'pry'
   gem 'byebug'
+  gem 'shoulda-matchers', '~> 3.0'
+  gem 'factory_girl_rails'
+  gem 'simplecov'
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'database_cleaner'
+  gem 'capybara'
 end
 
 group :development do
