@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get '/about', to: 'static#about', as: :about
 
-  get '/contact', to: 'static#about', as: :contact
+  get '/contact', to: 'static#contact', as: :contact
 
   get '/experience', to: 'static#experience', as: :experience
 
