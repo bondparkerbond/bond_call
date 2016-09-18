@@ -37,6 +37,43 @@ $link-accent-color: #E1D381 !default;
 //   font-family: GillSans, Calibri, Trebuchet, sans-serif;
 // }
 
+// .jvdge {
+//   background-image: url('icons/JVDGE1.jpg');
+//   height: 1000px !important;
+// }
+
+.jvdge-background {
+    background-image :url('icons/JVDGE1.jpg');
+    height: 1000px !important;
+    position: relative;
+}
+
+.jvdge-layer {
+    background-color: rgba(248, 247, 216, 0.7) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.topper {
+  padding-top: 1.75em !important;
+}
+
+.container {
+  width: 90% !important;
+}
+
+.grey-layer {
+  color: #E1DCAC !important;
+  opacity: 0.8;
+}
+
+.red-text {
+  color: $primary-color !important;
+}
+
 .medium {
   margin: 5px !important;
   height: 450px !important;
