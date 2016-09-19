@@ -29,9 +29,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :production do
 
+  gem 'puma', '~> 2.16.0'
+  # gem 'rails_12factor'
+
+end
 # For map of office if needed
-gem 'gmaps4rails'
+# gem 'gmaps4rails'
 # Formatting using materialize instead of bootstrap.
 gem 'materialize-sass'
 
