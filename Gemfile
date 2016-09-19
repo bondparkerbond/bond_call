@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :production do
 
   gem 'puma', '~> 2.16.0'
-  # gem 'rails_12factor'
+  gem 'rails_12factor'
 
 end
 # For map of office if needed
